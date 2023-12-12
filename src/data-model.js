@@ -98,7 +98,7 @@ function createGameArea() {
     <span id="carpi">X</span>
     <span id="ikinciSayi">${sayiUret()}</span>
     <span class="input-group mb-3">
-        <input id="sonuc" type="text" class="form-control" aria-label="Default" autofocus
+        <input id="sonuc" type="number" class="form-control" aria-label="Default" autofocus
             aria-describedby="inputGroup-sizing-default" placeholder="Sonucu Giriniz">
     </span>
     <button id="tamam"  type="button" class="btn btn-secondary">Tamam</button>`
