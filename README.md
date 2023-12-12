@@ -1,0 +1,1 @@
+# carpim_tablosu
