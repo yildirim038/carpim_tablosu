@@ -81,9 +81,8 @@ function addPlayer(pEvent) {
  * Ekrani yenileme Foksiyonu
  */
 function updateUI() {
-     retrieveList()                          //    Abi bu kismi local storage attim ama bir türlü düzgün alamadim.
-    gameElement.innerHTML = creatList(players) //     Kodu denedigimde undefined olarak objeler cikiyor.
-
+     retrieveList()                          
+    gameElement.innerHTML = creatList(players)  
 }
 /**
  * Kayit Ekleme Ekrani getiren Fonksiyon
@@ -100,7 +99,7 @@ function oyunUI() {
     saniyeBaslat()
 }
 /**
- * Oyun Baslatan Fonksiyon
+ * start Game
  * @param {*} pEvent 
  */
 function startGame(pEvent) {
@@ -119,7 +118,7 @@ function startGame(pEvent) {
     }
 }
 /**
- * Oyun Sayisini Tutan ve Bitiren Fonksiyon
+ * End Game
  */
 function gamePlay(pEvent) {
     if (pEvent.target.id === "tamam") {
@@ -143,13 +142,13 @@ function gamePlay(pEvent) {
     }
 }
 /**
- * Saniye durdurma Fonsiyonu
+ * end second
  */
 function saniyeDurdur() {
     window.clearInterval(deger);
 }
 /**
- * Saniye Baslatan ve geriye dogru saymayi saglayan fonksiyon
+ * start second
  */
 function saniyeBaslat() {
     if (saniye >= 0) {
@@ -166,7 +165,7 @@ function saniyeBaslat() {
     }
 }
 /**
- * Local Storage'e kayit Fonsiyonu 
+ * add Local Storage 
  * @param {*} pList 
  */
 function saveList(pList) {
@@ -177,7 +176,7 @@ function saveList(pList) {
     }
 }
 /**
- *Local Storage'den geri alma fonsiyonu
+ *get Local Storage
  */
 function retrieveList() {
     if (localStorage.length !== 0) {
